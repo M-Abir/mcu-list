@@ -257,6 +257,11 @@ h3,h4,h5,h6{
         font-size: 15px;
     }
 }
+@media(max-width:576px){
+    #mcuAllMovies .mcuList{
+        margin-left: 20px;
+    }
+}
 /*MCU all movies list..release order...ends*/
 
 /*Footer*/
