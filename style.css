@@ -164,16 +164,17 @@ h3,h4,h5,h6{
     flex-direction: column;
     align-items: flex-start;
     list-style-type: square;
+    line-height: 24px;
 }
 #phaseMovie .container .tab-content-item ul li::marker{
     color: #00b3b3;
 }
-#phaseMovie .container .tab-content-item ul li a{
+#phaseMovie .container .tab-content-item ul li span{
     text-decoration: none;
     color: var(--link-color);
     font-size: 17px;
 }
-#phaseMovie .container .tab-content-item ul li a:hover{
+#phaseMovie .container .tab-content-item ul li span:hover{
     text-decoration: underline;
 }
 
@@ -233,10 +234,10 @@ h3,h4,h5,h6{
 #mcuAllMovies h5{
     color: var(--heading-color);
 }
-#mcuAllMovies .mcuList ul li a{
+#mcuAllMovies .mcuList ul li span{
     color: var(--link-color);
 }
-#mcuAllMovies .mcuList ul li a:hover{
+#mcuAllMovies .mcuList ul li span:hover{
     text-decoration: underline;
 }
 
