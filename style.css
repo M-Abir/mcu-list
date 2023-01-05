@@ -169,12 +169,12 @@ h3,h4,h5,h6{
 #phaseMovie .container .tab-content-item ul li::marker{
     color: #00b3b3;
 }
-#phaseMovie .container .tab-content-item ul li span{
+#phaseMovie .container .tab-content-item ul li a{
     text-decoration: none;
     color: var(--link-color);
     font-size: 17px;
 }
-#phaseMovie .container .tab-content-item ul li span:hover{
+#phaseMovie .container .tab-content-item ul li a:hover{
     text-decoration: underline;
 }
 
@@ -201,22 +201,28 @@ h3,h4,h5,h6{
 #mcuAllMovies .mcuList{
     display: none;
 }
+
+/* Show releasing order list when button clicked*/
 .show-mcu-list{
     display: block !important;
-    
 }
+.x-men-list{
+    display: block;
+    margin-top: 20px;
+}
+
 #mcuAllMovies .container p{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-#mcuAllMovies .mcuList ul{
+#mcuAllMovies .mcuList ul, #mcuAllMovies .x-men-list ul{
     list-style-type: number;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     line-height: 24px;
 }
-#mcuAllMovies .mcuList .spiderMan-films{
+#mcuAllMovies .mcuList .spiderMan-films, #mcuAllMovies .x-men-list .spiderMan-films{
     margin: 15px 0px 20px 0px;
 }
 #mcuAllMovies .drop-mcu-list{
@@ -234,18 +240,18 @@ h3,h4,h5,h6{
 #mcuAllMovies h5{
     color: var(--heading-color);
 }
-#mcuAllMovies .mcuList ul li span{
+#mcuAllMovies .mcuList ul li a, #mcuAllMovies .x-men-list ul li a{
     color: var(--link-color);
 }
-#mcuAllMovies .mcuList ul li span:hover{
+#mcuAllMovies .mcuList ul li a:hover, #mcuAllMovies .x-men-list ul li a:hover{
     text-decoration: underline;
 }
 
-#mcuAllMovies .mcuList ul li a.note{
+#mcuAllMovies .mcuList ul li a.note, #mcuAllMovies .x-men-list ul li a.note{
     color: lime;
     text-decoration: underline;
 }
-#mcuAllMovies .mcuList ul li a.note:hover{
+#mcuAllMovies .mcuList ul li a.note:hover, #mcuAllMovies .x-men-list ul li a.note:hover{
     color: #00cc00;
 }
 
@@ -259,7 +265,7 @@ h3,h4,h5,h6{
     }
 }
 @media(max-width:576px){
-    #mcuAllMovies .mcuList{
+    #mcuAllMovies .mcuList, #mcuAllMovies .x-men-list{
         margin-left: 20px;
     }
 }
